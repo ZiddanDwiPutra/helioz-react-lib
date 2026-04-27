@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Quill Dark Mode Fixes */
+.ql-toolbar.ql-snow {
+  border-color: #1e293b !important;
+  background-color: #0f172a !important;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.ql-container.ql-snow {
+  border-color: #1e293b !important;
+  background-color: #020617 !important;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  font-family: inherit;
+}
+.ql-editor {
+  color: #f8fafc !important;
+  min-height: 150px;
+}
+.ql-snow .ql-stroke {
+  stroke: #94a3b8 !important;
+}
+.ql-snow .ql-fill {
+  fill: #94a3b8 !important;
+}
+.ql-snow .ql-picker {
+  color: #94a3b8 !important;
+}
+.ql-snow .ql-picker-options {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
+}
+
+@theme {
+  --color-brand-600: #6366f1;
+  --color-brand-700: #4f46e5;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --border: #1e293b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
