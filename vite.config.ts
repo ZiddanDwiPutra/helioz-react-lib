@@ -16,6 +16,7 @@ export default defineConfig({
       name: 'HeliozReactLib',
       fileName: 'helioz-react-lib',
     },
+    minify: 'oxc',
     rollupOptions: {
       external: ['react', 'react-dom'],
       output: {
